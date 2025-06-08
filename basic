@@ -19,3 +19,35 @@ in js window object is created along with global execution context what ever we 
 global space:
 anything outside any function is global space
 
+Notdefine vs Undefine:
+
+Notdefine meaning no such variable defined in code
+undefine meaning variable defined but not inisialised
+
+Lexical environment:
+
+lexical meaning herierical, lexical environment meaning local memory + lexical environment of parent.
+function can access variables in global space because first it search in local memory then its parents lexical environmrnt(global space in this case).
+eg:-
+
+let a=10;
+fuction c(){
+console.log(a);
+}
+
+let vs const vs var:
+
+let vs const stores in diff space than var, var stores values in global space. here hoisting done on 3, but let and const can't be accessed before like var this effect is called temporal deadzone.
+temporal deadzone: time gap between variable declearation and value inisialization.
+let and const variables can't be redecleared but var can.
+
+let vs const:
+
+const is strict than let:
+
+eg: let c; error   ------------------------------------because when using const declearation and inisialization need to done at sametime but let can
+    let c=10; right
+
+
+
+
