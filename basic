@@ -1,0 +1,21 @@
+
+js is single threaded and synchronous language
+js have a execution context with consist of 2 components:
+1)memory 2)code
+js run code in 2 phase:
+1)memory creation 2)thread of execution
+
+In memory creation phase variable are assigned with a keyword undifined and function as stored as funtions in key:value style
+in thread of execution js assign value to variable which holding undine and execute logic in case of function its creates another execution context
+
+
+Hoisting:
+it is a feature in js where we can access variables and function even before inisialition
+order of execution is maintained by a stack called call stack
+
+Window object:
+in js window object is created along with global execution context what ever we define in global space they will be attached to window object
+
+global space:
+anything outside any function is global space
+
